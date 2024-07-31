@@ -28,19 +28,21 @@ enum Resouces {
         
         enum Common {
             static var downArrow = UIImage(named: "tick")
+            static var addButton = UIImage(named: "AddButton")
         }
     }
     
-    enum Overview {
-        static var allWorcoustButton = "Все тренировки"
-    }
     
     enum Strings {
         enum TabBar {
-            static var overview = "Обзор"
+            static var overview = "Сегодня"
             static var session = "Занятия"
             static var progress  = "Погресс"
             static var settings = "Настройки"
+        }
+        
+        enum Overview {
+            static var allWorcoustButton = "Все тренировки"
         }
     }
     

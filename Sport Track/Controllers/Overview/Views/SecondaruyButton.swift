@@ -22,13 +22,17 @@ final class SecondaruyButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setTitle(title: String) {
+        label.text = title
+    }
 }
 
 private extension SecondaruyButton {
     
     func addViews() {
-        addSubview(label)
-        addSubview(iconView)
+        addView(label)
+        addView(iconView)
     }
     
     func layoutView() {
@@ -49,13 +53,12 @@ private extension SecondaruyButton {
         
         backgroundColor = Resouces.Colors.secondaruy
         layer.cornerRadius = 14
+        makeSustem(self)
         
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Resouces.Colors.active
         label.textAlignment = .center
         label.font = Resouces.Fonts.helveticaRegular(size: 15)
         
-        iconView.translatesAutoresizingMaskIntoConstraints = false
         iconView.image = Resouces.Image.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resouces.Colors.active
     }

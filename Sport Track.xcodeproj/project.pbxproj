@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2794AB2C5A5FF0002BCBA5 /* OverviewwNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2794AA2C5A5FF0002BCBA5 /* OverviewwNavBar.swift */; };
+		0C2794AD2C5A6024002BCBA5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2794AC2C5A6024002BCBA5 /* BaseView.swift */; };
+		0C2794B02C5A8099002BCBA5 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2794AF2C5A8099002BCBA5 /* WeekView.swift */; };
+		0C2794B22C5A8251002BCBA5 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2794B12C5A8251002BCBA5 /* WeekDayView.swift */; };
+		0C2794B42C5A8E6C002BCBA5 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2794B32C5A8E6C002BCBA5 /* Date + ext.swift */; };
 		0C3CA7992C5605C20096E94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7982C5605C20096E94A /* AppDelegate.swift */; };
 		0C3CA79B2C5605C20096E94A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA79A2C5605C20096E94A /* SceneDelegate.swift */; };
 		0C3CA79D2C5605C20096E94A /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA79C2C5605C20096E94A /* OverviewController.swift */; };
@@ -25,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C2794AA2C5A5FF0002BCBA5 /* OverviewwNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewwNavBar.swift; sourceTree = "<group>"; };
+		0C2794AC2C5A6024002BCBA5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0C2794AF2C5A8099002BCBA5 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		0C2794B12C5A8251002BCBA5 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		0C2794B32C5A8E6C002BCBA5 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		0C3CA7952C5605C20096E94A /* Sport Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3CA7982C5605C20096E94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C3CA79A2C5605C20096E94A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2794AE2C5A807F002BCBA5 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				0C2794AF2C5A8099002BCBA5 /* WeekView.swift */,
+				0C2794B12C5A8251002BCBA5 /* WeekDayView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
 		0C3CA78C2C5605C10096E94A = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				0C3CA7B12C560E570096E94A /* UIColor + ext.swift */,
+				0C2794B32C5A8E6C002BCBA5 /* Date + ext.swift */,
 				0C3CA7BB2C56260B0096E94A /* UIView + ext.swift */,
 			);
 			path = Extension;
@@ -137,6 +157,7 @@
 				0C3CA7AE2C560D730096E94A /* TabBar.swift */,
 				0C3CA7B52C561FB10096E94A /* NavBarController.swift */,
 				0C3CA7B82C5621C80096E94A /* BaseController.swift */,
+				0C2794AC2C5A6024002BCBA5 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -177,7 +198,9 @@
 		0C3CA7C82C5689D90096E94A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C2794AE2C5A807F002BCBA5 /* WeekView */,
 				0C3CA7C92C5689FB0096E94A /* SecondaruyButton.swift */,
+				0C2794AA2C5A5FF0002BCBA5 /* OverviewwNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2794B02C5A8099002BCBA5 /* WeekView.swift in Sources */,
+				0C2794B42C5A8E6C002BCBA5 /* Date + ext.swift in Sources */,
 				0C3CA79D2C5605C20096E94A /* OverviewController.swift in Sources */,
 				0C3CA7BC2C56260B0096E94A /* UIView + ext.swift in Sources */,
+				0C2794AB2C5A5FF0002BCBA5 /* OverviewwNavBar.swift in Sources */,
 				0C3CA7CA2C5689FB0096E94A /* SecondaruyButton.swift in Sources */,
 				0C3CA7992C5605C20096E94A /* AppDelegate.swift in Sources */,
 				0C3CA79B2C5605C20096E94A /* SceneDelegate.swift in Sources */,
@@ -263,6 +289,8 @@
 				0C3CA7C32C5627FA0096E94A /* SettingsController.swift in Sources */,
 				0C3CA7B42C560EE80096E94A /* Resouces.swift in Sources */,
 				0C3CA7B92C5621C80096E94A /* BaseController.swift in Sources */,
+				0C2794AD2C5A6024002BCBA5 /* BaseView.swift in Sources */,
+				0C2794B22C5A8251002BCBA5 /* WeekDayView.swift in Sources */,
 				0C3CA7C72C56280E0096E94A /* SessionController.swift in Sources */,
 				0C3CA7AF2C560D730096E94A /* TabBar.swift in Sources */,
 			);
