@@ -15,12 +15,19 @@ extension WeekView {
         private let stakView = UIStackView()
         
         func configurateCalendar(with index: Int, and name: String) {
-            
+                        
             let startOfWeak = Date().startOfWeak
             let currentDay = startOfWeak.agoForward(to: index)
             let day = Calendar.current.component(.day, from: currentDay)
+            
+            let isToday = currentDay.stripTime() == Date().stripTime()
+            backgroundColor = isToday ? Resouces.Colors.active : Resouces.Colors.backround
+            
             nameLabel.text = name.uppercased()
+            nameLabel.textColor = isToday ? .white : Resouces.Colors.inactive
+            
             dayLabel.text = "\(day)"
+            dayLabel.textColor = isToday ? .white : Resouces.Colors.inactive
         }
     }
 }
@@ -46,7 +53,6 @@ extension WeekView.WeekDayView {
     override func configurate() {
         super.configurate()
         
-        backgroundColor = .red
         layer.cornerRadius = 5
         layer.masksToBounds = true
         
