@@ -39,14 +39,14 @@ extension WeekView {
         
         var weekDays = calendar.shortStandaloneWeekdaySymbols
         
-        if calendar.firstWeekday == 1 {
+        if calendar.firstWeekday == 2 {
            let sun = weekDays.remove(at: 0)
             weekDays.append(sun)
         }
         
         weekDays.enumerated().forEach { index, name in
             let view = WeekDayView()
-            view.configurateCalendar(with: index, and: name )
+            view.configurateCalendar(with: index - 1, and: name )
             stakView.addArrangedSubview(view)
         }
     }
