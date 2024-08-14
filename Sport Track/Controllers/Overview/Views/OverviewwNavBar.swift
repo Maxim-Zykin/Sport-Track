@@ -33,10 +33,10 @@ final class OverviewNavBar: BaseView {
 extension OverviewNavBar {
     override func addViews() {
         super.addViews()
-        addView(addButon)
-        addView(titleLabel)
-        addView(allWorkoutsButton)
-        addView(weekView)
+        setupView(addButon)
+        setupView(titleLabel)
+        setupView(allWorkoutsButton)
+        setupView(weekView)
     }
     
     override func layoutViews() {

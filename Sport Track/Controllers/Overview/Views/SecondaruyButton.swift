@@ -31,8 +31,8 @@ final class SecondaruyButton: UIButton {
 private extension SecondaruyButton {
     
     func addViews() {
-        addView(label)
-        addView(iconView)
+        setupView(label)
+        setupView(iconView)
     }
     
     func layoutView() {

@@ -20,7 +20,7 @@ extension OverviewController {
         
     override func addViews() {
         super.addViews()
-        view.addView(navBar)
+        view.setupView(navBar)
     }
     
     override func layoutViews() {

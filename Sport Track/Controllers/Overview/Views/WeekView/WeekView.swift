@@ -18,7 +18,7 @@ extension WeekView {
 
     override func addViews() {
         super.addViews()
-        addView(stakView)
+        setupView(stakView)
     }
     
     override func layoutViews() {
