@@ -10,7 +10,7 @@ import UIKit
 class SessionController: BaseController {
     
     private let timerView: BaseInfoView = {
-        let view = BaseInfoView(title: "Test", aligment: .left)
+        let view = BaseInfoView(title: "Test")
         
         return view
     }()
@@ -45,7 +45,5 @@ extension SessionController {
     
     override func configurate() {
         super.configurate()
-        navigationController?.navigationBar.isHidden = true
-
     }
 }

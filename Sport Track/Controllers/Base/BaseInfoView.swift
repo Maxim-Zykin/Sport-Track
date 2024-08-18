@@ -11,7 +11,6 @@ class BaseInfoView: BaseView {
     
     private let titleLabel:  UILabel = {
         let label = UILabel()
-        label.text = "Тест".uppercased()
         label.font = Resouces.Fonts.helveticaRegular(size: 13)
         label.textColor = Resouces.Colors.inactive
         return label
