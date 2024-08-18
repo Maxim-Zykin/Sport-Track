@@ -25,6 +25,10 @@ final class TabBar: UITabBarController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
+    }
+    
     private func configurate () {
         tabBar.tintColor = Resouces.Colors.active
         tabBar.barTintColor = Resouces.Colors.inactive

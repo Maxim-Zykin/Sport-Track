@@ -9,12 +9,14 @@ import UIKit
 
 class BaseInfoView: BaseView {
     
-    private let titleLabel:  UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = Resouces.Fonts.helveticaRegular(size: 13)
         label.textColor = Resouces.Colors.inactive
         return label
     }()
+    
+    private let button = WAButton(type: .primary)
     
     private let contentView: UIView = {
         let view = UIView()
@@ -25,9 +27,12 @@ class BaseInfoView: BaseView {
         return view
     }()
     
-    init(title: String? = nil, aligment: NSTextAlignment = .left) {
+    init(title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
-        titleLabel.textAlignment = aligment
+        titleLabel.textAlignment = buttonTitle == nil ? .center : .left
+        
+        button.setTitle(title: buttonTitle)
+        button.isHidden = buttonTitle == nil ? true : false
         super.init(frame: .zero)
     }
     
@@ -35,6 +40,9 @@ class BaseInfoView: BaseView {
         super.init(frame: .zero)
     }
     
+    func addButtonTarget(target: Any?, action: Selector) {
+        button.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 @objc extension BaseInfoView {
@@ -43,6 +51,7 @@ class BaseInfoView: BaseView {
         super.addViews()
        setupView(titleLabel)
        setupView(contentView)
+       setupView(button)
     }
     
    override func layoutViews() {
@@ -55,6 +64,11 @@ class BaseInfoView: BaseView {
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
         titleLabel.topAnchor.constraint(equalTo: topAnchor),
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+        
+        button.trailingAnchor.constraint(equalTo: trailingAnchor),
+        button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+        button.heightAnchor.constraint(equalToConstant: 30),
+       // button.widthAnchor.constraint(equalToConstant: 130),
         
         contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
         contentView.leadingAnchor.constraint(equalTo: leadingAnchor),

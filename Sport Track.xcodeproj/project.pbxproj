@@ -26,7 +26,8 @@
 		0C3CA7C32C5627FA0096E94A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7C22C5627FA0096E94A /* SettingsController.swift */; };
 		0C3CA7C52C5628030096E94A /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7C42C5628030096E94A /* ProgressController.swift */; };
 		0C3CA7C72C56280E0096E94A /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7C62C56280E0096E94A /* SessionController.swift */; };
-		0C3CA7CA2C5689FB0096E94A /* SecondaruyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7C92C5689FB0096E94A /* SecondaruyButton.swift */; };
+		0C3CA7CA2C5689FB0096E94A /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CA7C92C5689FB0096E94A /* WAButton.swift */; };
+		0CF088632C63C57C00F16D42 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF088622C63C57C00F16D42 /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +52,9 @@
 		0C3CA7C22C5627FA0096E94A /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		0C3CA7C42C5628030096E94A /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		0C3CA7C62C56280E0096E94A /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
-		0C3CA7C92C5689FB0096E94A /* SecondaruyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaruyButton.swift; sourceTree = "<group>"; };
+		0C3CA7C92C5689FB0096E94A /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		0C4A167C2C5A95D50021A8A0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0CF088622C63C57C00F16D42 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,8 @@
 				0C3CA7B52C561FB10096E94A /* NavBarController.swift */,
 				0C3CA7B82C5621C80096E94A /* BaseController.swift */,
 				0C2794AC2C5A6024002BCBA5 /* BaseView.swift */,
+				0CF088622C63C57C00F16D42 /* BaseInfoView.swift */,
+				0C3CA7C92C5689FB0096E94A /* WAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -200,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				0C2794AE2C5A807F002BCBA5 /* WeekView */,
-				0C3CA7C92C5689FB0096E94A /* SecondaruyButton.swift */,
 				0C2794AA2C5A5FF0002BCBA5 /* OverviewwNavBar.swift */,
 			);
 			path = Views;
@@ -282,10 +285,11 @@
 				0C3CA79D2C5605C20096E94A /* OverviewController.swift in Sources */,
 				0C3CA7BC2C56260B0096E94A /* UIView + ext.swift in Sources */,
 				0C2794AB2C5A5FF0002BCBA5 /* OverviewwNavBar.swift in Sources */,
-				0C3CA7CA2C5689FB0096E94A /* SecondaruyButton.swift in Sources */,
+				0C3CA7CA2C5689FB0096E94A /* WAButton.swift in Sources */,
 				0C3CA7992C5605C20096E94A /* AppDelegate.swift in Sources */,
 				0C3CA79B2C5605C20096E94A /* SceneDelegate.swift in Sources */,
 				0C3CA7B62C561FB10096E94A /* NavBarController.swift in Sources */,
+				0CF088632C63C57C00F16D42 /* BaseInfoView.swift in Sources */,
 				0C3CA7C52C5628030096E94A /* ProgressController.swift in Sources */,
 				0C3CA7B22C560E570096E94A /* UIColor + ext.swift in Sources */,
 				0C3CA7C32C5627FA0096E94A /* SettingsController.swift in Sources */,

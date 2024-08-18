@@ -10,7 +10,7 @@ import UIKit
 class SessionController: BaseController {
     
     private let timerView: BaseInfoView = {
-        let view = BaseInfoView(title: "Test")
+        let view = BaseInfoView(title: "Test B", buttonTitle: "Test Button".uppercased())
         
         return view
     }()
@@ -22,8 +22,6 @@ class SessionController: BaseController {
         addNavBarButton(position: .left, title: "Пауза")
         addNavBarButton(position: .right, title: "Финиш")
     }
-
-
 }
 
 extension SessionController {
