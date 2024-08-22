@@ -10,39 +10,39 @@ import UIKit
 enum Resouces {
     
     enum Colors {
-        static var active = UIColor(hexString: "#437BFE")
-        static var inactive = UIColor(hexString: "#929DA5")
-        static var separator = UIColor(hexString: "#E8ECEF")
-        static var titleGray = UIColor(hexString: "#545C77")
-        static var backround = UIColor(hexString: "#F8F9F9")
-        static var secondaruy = UIColor(hexString: "#F0F3FF")
+        static let active = UIColor(hexString: "#437BFE")
+        static let inactive = UIColor(hexString: "#929DA5")
+        static let separator = UIColor(hexString: "#E8ECEF")
+        static let titleGray = UIColor(hexString: "#545C77")
+        static let backround = UIColor(hexString: "#F8F9F9")
+        static let secondaruy = UIColor(hexString: "#F0F3FF")
     }
     
     enum Image {
         enum TabBar {
-            static var overview = UIImage(named: "overview")
-            static var session = UIImage(named: "session")
-            static var progress  = UIImage(named: "progress")
-            static var settings = UIImage(named: "settings")
+            static let overview = UIImage(named: "overview")
+            static let session = UIImage(named: "session")
+            static let progress  = UIImage(named: "progress")
+            static let settings = UIImage(named: "settings")
         }
         
         enum Common {
-            static var downArrow = UIImage(named: "tick")
-            static var addButton = UIImage(named: "AddButton")
+            static let downArrow = UIImage(named: "tick")
+            static let addButton = UIImage(named: "AddButton")
         }
     }
     
     
     enum Strings {
         enum TabBar {
-            static var overview = "Сегодня"
-            static var session = "Занятия"
-            static var progress  = "Погресс"
-            static var settings = "Настройки"
+            static let overview = "Сегодня"
+            static let session = "Занятия"
+            static let progress  = "Погресс"
+            static let settings = "Настройки"
         }
         
         enum Overview {
-            static var allWorcoustButton = "Все тренировки"
+            static let allWorcoustButton = "Все тренировки"
         }
     }
     

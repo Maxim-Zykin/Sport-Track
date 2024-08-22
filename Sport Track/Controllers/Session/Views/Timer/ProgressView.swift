@@ -24,6 +24,14 @@ extension TimerView {
                                           endAngle: endAngle,
                                            clockwise: true)
             
+            let defaulrCircleLayer = CAShapeLayer()
+            defaulrCircleLayer.path = circlePath.cgPath
+            defaulrCircleLayer.strokeColor = Resouces.Colors.separator.cgColor
+            defaulrCircleLayer.lineWidth = 20
+            defaulrCircleLayer.strokeEnd = 1
+            defaulrCircleLayer.fillColor = UIColor.clear.cgColor
+            defaulrCircleLayer.lineCap = .round
+            
             let circleLayer = CAShapeLayer()
             circleLayer.path = circlePath.cgPath
             circleLayer.strokeColor = Resouces.Colors.active.cgColor
@@ -31,8 +39,32 @@ extension TimerView {
             circleLayer.strokeEnd = percent
             circleLayer.fillColor = UIColor.clear.cgColor
             circleLayer.lineCap = .round
+                        
+            let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent))
+            let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x,
+                                        y: sin(-dotAngle) * radius + center.y)
+            let dotPath = UIBezierPath()
+            dotPath.move(to: dotPoint)
+            dotPath.addLine(to: dotPoint)
             
-            layer.addSublayer(circleLayer )
+            let bigDotLayer = CAShapeLayer()
+            bigDotLayer.path = dotPath.cgPath
+            bigDotLayer.fillColor = UIColor.clear.cgColor
+            bigDotLayer.strokeColor = Resouces.Colors.active.cgColor
+            bigDotLayer.lineCap = .round
+            bigDotLayer.lineWidth = 20
+
+            let dotLayer = CAShapeLayer()
+            dotLayer.path = dotPath.cgPath
+            dotLayer.fillColor = UIColor.clear.cgColor
+            dotLayer.strokeColor = UIColor.white.cgColor
+            dotLayer.lineCap = .round
+            dotLayer.lineWidth = 8
+            
+            layer.addSublayer(defaulrCircleLayer)
+            layer.addSublayer(circleLayer)
+            layer.addSublayer(bigDotLayer)
+            layer.addSublayer(dotLayer)
         }
     }
     

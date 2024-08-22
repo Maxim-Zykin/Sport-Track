@@ -9,7 +9,10 @@ import Foundation
 
 extension Date {
     private var calendar: Calendar {
-        return Calendar.current
+//        return Calendar.current
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.firstWeekday = 2
+        return calendar
     }
     
     var startOfWeak: Date {
