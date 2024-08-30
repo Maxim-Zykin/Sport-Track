@@ -41,6 +41,11 @@ enum Resouces {
             static let settings = "Настройки"
         }
         
+        enum Session {
+            static let elepsedTime = "Прошедшее время"
+            static let remainegTime = "Оставшееся время"
+        }
+        
         enum Overview {
             static let allWorcoustButton = "Все тренировки"
         }
